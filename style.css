@@ -199,3 +199,23 @@ body:not(.dark) .hero-title span {
   color: #38bdf8;
 }
 
+/* LIGHT MODE HERO BACKGROUND */
+body:not(.dark) .hero {
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.25), transparent 45%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.25), transparent 45%),
+    linear-gradient(180deg, #f8fafc, #eef2ff);
+}
+
+/* LIGHT MODE PAGE BACKGROUND */
+body:not(.dark) {
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef2ff 50%,
+      #f8fafc 100%
+    );
+}
+
+
