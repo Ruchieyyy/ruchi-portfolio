@@ -35,10 +35,18 @@ body {
   font-size: 64px;
   line-height: 1.1;
   margin: 12px 0;
-  color: #0e1b2b;
+  
 }
 
 
+/* HERO TITLE COLOR CONTROL */
+.hero-title {
+  color: #0e1b2b; /* LIGHT MODE – Ruchi */
+}
+
+body.dark .hero-title {
+  color: #b0cff5; /* DARK MODE – Ruchi */
+}
 
 
 /* Accent color on last name */
@@ -190,9 +198,6 @@ body.dark .tags span {
   background: #020617;
   color: #e5e7eb;
   border: 1px solid #1e293b;
-}
-body.dark .hero-title {
-  color: #b0cff5; /* Ruchi in DARK MODE */
 }
 
 
