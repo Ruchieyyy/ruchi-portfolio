@@ -62,4 +62,50 @@ section {
   background: #38bdf8;
 }
 
+/* DARK MODE */
+.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.dark section {
+  background: #020617;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 15px rgba(56,189,248,0.15);
+}
+
+.dark header {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+/* Toggle button */
+#toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #020617;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* CRAZY HOVER EFFECTS */
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.social a:hover {
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+}
+
+/* Smooth transition */
+body, section, header {
+  transition: all 0.4s ease;
+}
+
+
 
