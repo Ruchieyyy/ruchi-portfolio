@@ -1,28 +1,108 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background: #f8fafc;
   color: #1f2937;
+  transition: all 0.4s ease;
 }
 
+/* =======================
+   HEADER
+======================= */
 
 header {
-  background: #1e293b;
+  background: linear-gradient(270deg, #020617, #0f172a, #020617);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
   color: white;
   padding: 50px;
   text-align: center;
+  position: relative;
 }
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =======================
+   TYPING NAME EFFECT
+======================= */
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #38bdf8;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards,
+             blink 0.7s infinite;
+  margin: auto;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* =======================
+   SECTIONS
+======================= */
 
 section {
-  section h2 {
-  color: #0f172a;
-}
-
   background: white;
   margin: 20px;
   padding: 30px;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  animation: float 6s ease-in-out infinite;
+  transition: all 0.4s ease;
 }
+
+section h2 {
+  color: #0f172a;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Hover lift */
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Neon scan effect */
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+  background-size: 200%;
+  animation: scan 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+/* =======================
+   SKILLS TAGS
+======================= */
 
 .tags span {
   display: inline-block;
@@ -30,7 +110,12 @@ section {
   padding: 6px 12px;
   margin: 5px;
   border-radius: 5px;
+  font-weight: 500;
 }
+
+/* =======================
+   BUTTONS
+======================= */
 
 .btn {
   display: inline-block;
@@ -42,6 +127,10 @@ section {
   border-radius: 5px;
   font-weight: bold;
 }
+
+/* =======================
+   SOCIAL LINKS
+======================= */
 
 .social {
   margin-top: 15px;
@@ -56,27 +145,35 @@ section {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .social a:hover {
   background: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
 }
 
-/* DARK MODE */
-/* DARK MODE FIXED */
+/* =======================
+   DARK MODE
+======================= */
+
 body.dark {
   background: #020617;
   color: #e5e7eb;
 }
 
 body.dark header {
-  background: linear-gradient(135deg, #020617, #020617);
+  background: linear-gradient(270deg, #020617, #020617, #020617);
 }
 
 body.dark section {
   background: #020617;
   border: 1px solid #1e293b;
   box-shadow: 0 0 15px rgba(56,189,248,0.25);
+}
+
+body.dark section h2 {
+  color: #e5e7eb;
 }
 
 body.dark .tags span {
@@ -86,12 +183,11 @@ body.dark .tags span {
   box-shadow: 0 0 8px rgba(56,189,248,0.6);
   font-weight: 600;
 }
+
 body.dark .tags span:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px #38bdf8;
 }
-
-
 
 body.dark .social a {
   background: #020617;
@@ -99,8 +195,10 @@ body.dark .social a {
   border: 1px solid #38bdf8;
 }
 
+/* =======================
+   DARK MODE TOGGLE BUTTON
+======================= */
 
-/* Toggle button */
 #toggle {
   position: absolute;
   top: 20px;
@@ -113,21 +211,17 @@ body.dark .social a {
   cursor: pointer;
 }
 
-/* CRAZY HOVER EFFECTS */
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-  transition: 0.3s ease;
+/* =======================
+   SCROLL REVEAL
+======================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s ease;
 }
 
-.social a:hover {
-  box-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8;
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-/* Smooth transition */
-body, section, header {
-  transition: all 0.4s ease;
-}
-
-
-
