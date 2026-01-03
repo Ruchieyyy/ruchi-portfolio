@@ -38,27 +38,25 @@ body {
   color: white;
 }
 
-.netflix-fade {
-  animation: netflixFade 7s ease-in-out infinite;
-}
+
 
 
 /* Accent color on last name */
 
 
 /* Netflix-style fade */
+
 .netflix-fade {
-  animation: netflixBlueFade 5s ease-in-out infinite;
+  animation: netflixBlueFade 6s ease-in-out infinite;
 }
 
-/* Blue fade instead of opacity fade */
 @keyframes netflixBlueFade {
   0% {
-    color: #60a5fa;      /* soft blue */
+    color: #60a5fa;
     letter-spacing: 0.25em;
   }
   20% {
-    color: #38bdf8;      /* main accent blue */
+    color: #38bdf8;
     letter-spacing: 0.05em;
   }
   70% {
@@ -73,9 +71,6 @@ body {
 
 
 
-.hero-title span {
-  color: #38bdf8;
-}
 
 .hero-subtitle {
   color: #cbd5f5;
@@ -209,15 +204,7 @@ body:not(.dark) .hero {
 
 /* LIGHT MODE PAGE BACKGROUND */
 /* LIGHT MODE BACKGROUND – MINIMAL & CLEAN */
-body:not(.dark) {
-  background: linear-gradient(
-    135deg,
-    #f8fafc 0%,
-    #eef6ff 40%,
-    #eaf2ff 70%,
-    #f8fafc 100%
-  );
-}
+
 
 
 /* Light mode background for rest of page */
@@ -250,13 +237,3 @@ body:not(.dark) .btn.ghost {
   border-color: #94a3b8;
 }
 /* Light mode background for rest of page ONLY */
-body:not(.dark) .page-bg {
-  background: linear-gradient(
-    180deg,
-    #f8fafc 0%,
-    #eef6ff 45%,
-    #f8fafc 100%
-  );
-  padding: 80px 0;
-}
-
