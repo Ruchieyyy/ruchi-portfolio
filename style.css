@@ -63,20 +63,34 @@ section {
 }
 
 /* DARK MODE */
-.dark {
+/* DARK MODE FIXED */
+body.dark {
   background: #020617;
   color: #e5e7eb;
 }
 
-.dark section {
-  background: #020617;
-  border: 1px solid #1e293b;
-  box-shadow: 0 0 15px rgba(56,189,248,0.15);
-}
-
-.dark header {
+body.dark header {
   background: linear-gradient(135deg, #020617, #020617);
 }
+
+body.dark section {
+  background: #020617;
+  border: 1px solid #1e293b;
+  box-shadow: 0 0 15px rgba(56,189,248,0.25);
+}
+
+body.dark .tags span {
+  background: #020617;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+body.dark .social a {
+  background: #020617;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
 
 /* Toggle button */
 #toggle {
