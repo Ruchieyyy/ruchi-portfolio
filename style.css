@@ -236,4 +236,11 @@ body:not(.dark) .btn.ghost {
   color: #0f172a;
   border-color: #94a3b8;
 }
-/* Light mode background for rest of page ONLY */
+
+/* FIX: Ruchi text color in LIGHT MODE */
+body:not(.dark) .hero-title {
+  color: #0f172a; /* dark slate, readable */
+}
+
+/* Ligh
+t mode background for rest of page ONLY */
