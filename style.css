@@ -38,6 +38,35 @@ body {
   color: white;
 }
 
+.netflix-fade {
+  animation: netflixFade 7s ease-in-out infinite;
+}
+
+
+/* Accent color on last name */
+
+
+/* Netflix-style fade */
+@keyframes netflixFade {
+  0% {
+    opacity: 0;
+    letter-spacing: 0.25em;
+  }
+  20% {
+    opacity: 1;
+    letter-spacing: 0.05em;
+  }
+  70% {
+    opacity: 1;
+    letter-spacing: 0.05em;
+  }
+  100% {
+    opacity: 0;
+    letter-spacing: 0.25em;
+  }
+}
+
+
 .hero-title span {
   color: #38bdf8;
 }
@@ -160,3 +189,13 @@ body.dark .tags span {
   color: #e5e7eb;
   border: 1px solid #1e293b;
 }
+
+/* LIGHT MODE HERO TITLE FIX */
+body:not(.dark) .hero-title {
+  color: #0f172a;
+}
+
+body:not(.dark) .hero-title span {
+  color: #38bdf8;
+}
+
