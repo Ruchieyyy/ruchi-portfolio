@@ -197,14 +197,7 @@ body.dark .tags span {
   border: 1px solid #1e293b;
 }
 
-/* LIGHT MODE HERO TITLE FIX */
-body:not(.dark) .hero-title {
-  color: #0f172a;
-}
 
-body:not(.dark) .hero-title span {
-  color: #38bdf8;
-}
 
 /* LIGHT MODE HERO BACKGROUND */
 body:not(.dark) .hero {
@@ -247,9 +240,6 @@ body:not(.dark) .hero-intro {
   color: #475569; /* slate, readable */
 }
 
-body:not(.dark) .hero-title {
-  color: #0f172a; /* strong dark text */
-}
 
 body:not(.dark) .hero-subtitle {
   color: #334155; /* medium contrast */
@@ -258,5 +248,15 @@ body:not(.dark) .hero-subtitle {
 body:not(.dark) .btn.ghost {
   color: #0f172a;
   border-color: #94a3b8;
+}
+/* Light mode background for rest of page ONLY */
+body:not(.dark) .page-bg {
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #eef6ff 45%,
+    #f8fafc 100%
+  );
+  padding: 80px 0;
 }
 
