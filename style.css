@@ -47,24 +47,30 @@ body {
 
 
 /* Netflix-style fade */
-@keyframes netflixFade {
+.netflix-fade {
+  animation: netflixBlueFade 5s ease-in-out infinite;
+}
+
+/* Blue fade instead of opacity fade */
+@keyframes netflixBlueFade {
   0% {
-    opacity: 0;
+    color: #60a5fa;      /* soft blue */
     letter-spacing: 0.25em;
   }
   20% {
-    opacity: 1;
+    color: #38bdf8;      /* main accent blue */
     letter-spacing: 0.05em;
   }
   70% {
-    opacity: 1;
+    color: #38bdf8;
     letter-spacing: 0.05em;
   }
   100% {
-    opacity: 0;
+    color: #60a5fa;
     letter-spacing: 0.25em;
   }
 }
+
 
 
 .hero-title span {
