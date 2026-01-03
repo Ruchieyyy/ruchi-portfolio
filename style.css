@@ -35,7 +35,7 @@ body {
   font-size: 64px;
   line-height: 1.1;
   margin: 12px 0;
-  color: white;
+  color: #0172fa;
 }
 
 
@@ -191,6 +191,10 @@ body.dark .tags span {
   color: #e5e7eb;
   border: 1px solid #1e293b;
 }
+body.dark .hero-title {
+  color: white; /* Ruchi in DARK MODE */
+}
+
 
 
 
@@ -204,10 +208,6 @@ body:not(.dark) .hero {
 
 /* LIGHT MODE PAGE BACKGROUND */
 /* LIGHT MODE BACKGROUND – MINIMAL & CLEAN */
-/* FIX: Ruchi text color in LIGHT MODE */
-body:not(.dark) .hero-title {
-  color: #0f172a; /* dark slate, readable */
-}
 
 
 /* Light mode background for rest of page */
