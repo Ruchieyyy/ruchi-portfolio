@@ -14,21 +14,51 @@ body {
    HEADER
 ======================= */
 
-header {
-  background: linear-gradient(270deg, #020617, #0f172a, #020617);
-  background-size: 600% 600%;
-  animation: gradientMove 10s ease infinite;
-  color: white;
-  padding: 50px;
-  text-align: center;
-  position: relative;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  background:
+    radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.15), transparent 40%),
+    linear-gradient(180deg, #020617, #020617);
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.hero-content {
+  max-width: 600px;
 }
+
+.hero-intro {
+  color: #94a3b8;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 64px;
+  color: white;
+  line-height: 1.1;
+  margin: 12px 0;
+}
+
+.hero-title span {
+  color: #38bdf8;
+}
+
+.hero-subtitle {
+  color: #cbd5f5;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
 
 /* =======================
    TYPING NAME EFFECT
