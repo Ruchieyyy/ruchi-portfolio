@@ -184,6 +184,7 @@ body.dark {
 body.dark section {
   background: #020617;
   border: 1px solid #1e293b;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
 body.dark section p {
@@ -214,15 +215,17 @@ body:not(.dark) .hero {
 }
 
 /* LIGHT MODE PAGE BACKGROUND */
+/* LIGHT MODE BACKGROUND – MINIMAL & CLEAN */
 body:not(.dark) {
-  background:
-    linear-gradient(
-      180deg,
-      #f8fafc 0%,
-      #eef2ff 50%,
-      #f8fafc 100%
-    );
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #eef6ff 40%,
+    #eaf2ff 70%,
+    #f8fafc 100%
+  );
 }
+
 
 /* Light mode background for rest of page */
 .page-bg {
@@ -239,4 +242,21 @@ body.dark .page-bg {
   background: #020617;
 }
 
+/* LIGHT MODE TEXT FIX */
+body:not(.dark) .hero-intro {
+  color: #475569; /* slate, readable */
+}
+
+body:not(.dark) .hero-title {
+  color: #0f172a; /* strong dark text */
+}
+
+body:not(.dark) .hero-subtitle {
+  color: #334155; /* medium contrast */
+}
+
+body:not(.dark) .btn.ghost {
+  color: #0f172a;
+  border-color: #94a3b8;
+}
 
