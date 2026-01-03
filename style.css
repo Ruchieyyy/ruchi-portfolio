@@ -1,9 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: #f4f6f8;
-  color: #333;
+  background: #f8fafc;
+  color: #1f2937;
 }
+
 
 header {
   background: #1e293b;
@@ -13,6 +14,10 @@ header {
 }
 
 section {
+  section h2 {
+  color: #0f172a;
+}
+
   background: white;
   margin: 20px;
   padding: 30px;
@@ -37,4 +42,24 @@ section {
   border-radius: 5px;
   font-weight: bold;
 }
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: #e5e7eb;
+  color: #111827;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.social a:hover {
+  background: #38bdf8;
+}
+
 
