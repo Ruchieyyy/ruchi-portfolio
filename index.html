@@ -87,6 +87,16 @@
   <p>Email: ruchishukla34555@gmail.com</p>
   <p>Location: Pune, Maharashtra</p>
 </section>
+<script>
+  const toggle = document.getElementById("toggle");
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark");
+    toggle.textContent =
+      document.body.classList.contains("dark")
+        ? "☀️ Light Mode"
+        : "🌙 Dark Mode";
+  };
+</script>
 
 </body>
 </html>
