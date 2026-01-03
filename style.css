@@ -218,4 +218,19 @@ body:not(.dark) {
     );
 }
 
+/* Light mode background for rest of page */
+.page-bg {
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc 0%,
+      #eef6ff 40%,
+      #f8fafc 100%
+    );
+  padding: 80px 0;
+}
+body.dark .page-bg {
+  background: #020617;
+}
+
 
